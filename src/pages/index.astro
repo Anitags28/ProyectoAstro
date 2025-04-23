@@ -1,11 +1,27 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import "../styles/global.css";
 ---
-
-<Layout>
-	<Welcome />
-</Layout>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <header class="bg-blue-600 text-white p-4">
+    <nav class="container mx-auto flex justify-between">
+      <h1 class="text-xl font-bold">LAB MANAGER</h1>
+      <ul class="flex space-x-4">
+        <li><a href="#" class="hover:underline">Inicio</a></li>
+        <li><a href="#" class="hover:underline">Asistencias</a></li>
+        <li><a href="#" class="hover:underline">Normas</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container mx-auto p-6">
+    <h2 class="text-3xl font-bold">¡Bienvenido!<a href="login.astro">!</a></h2>
+    <p class="mt-4 text-lg">Aquí puedes encontrar los enlaces a los blogs de las diferentes materias.</p>
+  </main>
+</body>
+</html>
